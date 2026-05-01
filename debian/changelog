@@ -1,3 +1,9 @@
+velora-log-viewer (6.5.30.lingmo.1) unstable; urgency=medium
+
+  * new release for Lingmo OS.
+
+ -- Lingmo OS Team <team@lingmo.org>  Fri, 01 May 2026 21:14:00 +0800
+
 deepin-log-viewer (6.5.29) unstable; urgency=medium
 
   * Fix: resolve double polkit authorization prompt when exporting logs
