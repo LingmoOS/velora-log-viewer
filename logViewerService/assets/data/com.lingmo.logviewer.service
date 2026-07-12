@@ -1,4 +1,4 @@
 [D-BUS Service]
-Name=com.deepin.logviewer
+Name=com.lingmo.logviewer
 Exec=/usr/bin/false
 SystemdService=deepin-log-viewer-daemon.service

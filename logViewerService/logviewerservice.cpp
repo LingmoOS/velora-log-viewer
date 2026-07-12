@@ -38,9 +38,9 @@ using namespace PolkitQt1;
 #include <QTemporaryFile>
 
 #ifdef QT_DEBUG
-Q_LOGGING_CATEGORY(logService, "org.deepin.log.viewer.service")
+Q_LOGGING_CATEGORY(logService, "org.lingmo.log.viewer.service")
 #else
-Q_LOGGING_CATEGORY(logService, "org.deepin.log.viewer.service", QtInfoMsg)
+Q_LOGGING_CATEGORY(logService, "org.lingmo.log.viewer.service", QtInfoMsg)
 #endif
 
 // 读取崩溃应用maps信息最大行数

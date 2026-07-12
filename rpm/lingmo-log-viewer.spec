@@ -1,5 +1,5 @@
 %define debug_package %{nil}
-Name:           deepin-log-viewer
+Name:           lingmo-log-viewer
 Version:        6.0.2
 Release:        1%{?dist}.01.zs
 Summary:        Log Viewer is a useful tool for viewing system logs
@@ -55,9 +55,9 @@ Deepin Log Viewer Plugin library development headers.
 %build
 export PATH=%{_qt5_bindir}:$PATH
 sed -i "s|^cmake_minimum_required.*|cmake_minimum_required(VERSION 3.0)|" $(find . -name "CMakeLists.txt")
-mkdir build && pushd build 
-%cmake -DCMAKE_BUILD_TYPE=Release ../  -DAPP_VERSION=%{version} -DVERSION=%{version} 
-%make_build  
+mkdir build && pushd build
+%cmake -DCMAKE_BUILD_TYPE=Release ../  -DAPP_VERSION=%{version} -DVERSION=%{version}
+%make_build
 popd
 
 %install
@@ -74,7 +74,7 @@ popd
 %{_datadir}/%{name}/translations/*.qm
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{_datadir}/polkit-1/actions/*.policy
-%{_datadir}/deepin-manual/manual-assets/application/deepin-log-viewer/log-viewer/*
+%{_datadir}/deepin-manual/manual-assets/application/lingmo-log-viewer/log-viewer/*
 %{_prefix}/lib/deepin-daemon/log-view-service
 %{_datadir}/dbus-1/system-services/com.deepin.logviewer.service
 %{_datadir}/dbus-1/system.d/com.deepin.logviewer.conf
@@ -93,4 +93,3 @@ popd
 %changelog
 * Mon Jun 13 2022 uoser <uoser@uniontech.com> - 6.0.2-1.01
 - update: update to 6.0.2-1.01
-

@@ -1,4 +1,4 @@
-Source: velora-log-viewer
+Source: lingmo-log-viewer
 Section: utils
 Priority: optional
 Maintainer: Lingmo OS Team <team@lingmo.org>
@@ -29,9 +29,9 @@ Build-Depends:
  libltdl-dev,
  libgio-qt-dev
 Standards-Version: 4.5.0
-Homepage: https://github.com/LingmoOS/velora-log-viewer
+Homepage: https://github.com/LingmoOS/lingmo-log-viewer
 
-Package: deepin-log-viewer
+Package: lingmo-log-viewer
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
  coreutils,

@@ -31,15 +31,15 @@ DLDBusHandler::DLDBusHandler(QObject *parent)
     : QObject(parent)
 {
     qCDebug(logApp) << "DLDBusHandler constructor called with parent:" << parent;
-    m_dbus = new DeepinLogviewerInterface("com.deepin.logviewer",
-                                          "/com/deepin/logviewer",
+    m_dbus = new DeepinLogviewerInterface("com.lingmo.logviewer",
+                                          "/com/lingmo/logviewer",
                                           QDBusConnection::systemBus(),
                                           this);
     //Note: when dealing with remote objects, it is not always possible to determine if it exists when creating a QDBusInterface.
     if (!m_dbus->isValid() && !m_dbus->lastError().message().isEmpty()) {
-        qCCritical(logApp) << "dbus com.deepin.logviewer isValid false error:" << m_dbus->lastError() << m_dbus->lastError().message();
+        qCCritical(logApp) << "dbus com.lingmo.logviewer isValid false error:" << m_dbus->lastError() << m_dbus->lastError().message();
     }
-    qCDebug(logApp) << "dbus com.deepin.logviewer isValid true";
+    qCDebug(logApp) << "dbus com.lingmo.logviewer isValid true";
 }
 
 /*!

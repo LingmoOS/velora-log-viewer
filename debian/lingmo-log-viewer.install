@@ -1,4 +1,4 @@
-usr/bin/deepin-log-viewer
+usr/bin/lingmo-log-viewer
 usr/bin/logViewerAuth
 usr/bin/logViewerTruncate
 usr/bin/deepin-logger
@@ -9,12 +9,12 @@ usr/lib/systemd/system/deepin-log-viewer-daemon.service
 usr/share/applications/deepin-log-viewer.desktop
 usr/share/dbus-1/system-services/com.deepin.logviewer.service
 usr/share/dbus-1/system.d/com.deepin.logviewer.conf
-usr/share/deepin-log-viewer/DocxTemplate/*.dfw
+usr/share/lingmo-log-viewer/DocxTemplate/*.dfw
 usr/share/dsg/configs/org.deepin.log.viewer/*.json
 usr/share/glib-2.0/schemas/*.gschema.xml
-usr/share/deepin-log-viewer/translations/*.qm
-usr/share/deepin-log-viewer/auditRule.conf
-usr/share/deepin-log-viewer/deepin-log.conf.d/*.json
+usr/share/lingmo-log-viewer/translations/*.qm
+usr/share/lingmo-log-viewer/auditRule.conf
+usr/share/lingmo-log-viewer/deepin-log.conf.d/*.json
 usr/share/deepin-debug-config/deepin-debug-config.d/*.json
 usr/share/polkit-1/actions/*.policy
 usr/share/icons/hicolor/scalable/apps/*.svg

@@ -15,7 +15,7 @@
 Q_DECLARE_LOGGING_CATEGORY(logService)
 
 //service name
-const QString LogViewrServiceName = "com.deepin.logviewer";
+const QString LogViewrServiceName = "com.lingmo.logviewer";
 //service path
 const QString LogViewrPath = "/com/deepin/logviewer";
 

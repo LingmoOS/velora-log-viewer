@@ -17,14 +17,14 @@ class QVariant;
 QT_END_NAMESPACE
 
 /*
- * Adaptor class for interface com.deepin.logviewer
+ * Adaptor class for interface com.lingmo.logviewer
  */
 class LogViewerAdaptor: public QDBusAbstractAdaptor
 {
     Q_OBJECT
-    Q_CLASSINFO("D-Bus Interface", "com.deepin.logviewer")
+    Q_CLASSINFO("D-Bus Interface", "com.lingmo.logviewer")
     Q_CLASSINFO("D-Bus Introspection", ""
-"  <interface name=\"com.deepin.logviewer\">\n"
+"  <interface name=\"com.lingmo.logviewer\">\n"
 "    <method name=\"readLog\">\n"
 "      <arg direction=\"out\" type=\"s\"/>\n"
 "      <arg direction=\"in\" type=\"i\" name=\"fd\"/>\n"

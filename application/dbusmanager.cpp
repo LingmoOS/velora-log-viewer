@@ -29,12 +29,12 @@ bool DBusManager::isSEOpen()
 {
     qCDebug(logApp) << "Checking SecurityEnhance status";
     bool bIsSEOpen = false;
-    QDBusInterface interfaceSE("com.deepin.daemon.SecurityEnhance", "/com/deepin/daemon/SecurityEnhance", "com.deepin.daemon.SecurityEnhance", QDBusConnection::systemBus());
+    QDBusInterface interfaceSE("com.lingmo.daemon.SecurityEnhance", "/com/lingmo/daemon/SecurityEnhance", "com.lingmo.daemon.SecurityEnhance", QDBusConnection::systemBus());
     if (interfaceSE.isValid()) {
         qCInfo(logApp) << "SecurityEnhance interface is valid, calling Status method";
         QDBusReply<QString> reply = interfaceSE.call(QStringLiteral("Status"));
         if (!reply.error().message().isEmpty()) {
-            qCWarning(logApp) << qPrintable(QString("com.deepin.daemon.SecurityEnhance.Status DBus error: %1").arg(reply.error().message()));
+            qCWarning(logApp) << qPrintable(QString("com.lingmo.daemon.SecurityEnhance.Status DBus error: %1").arg(reply.error().message()));
         }
 
         if (reply.value() == "close") {
@@ -63,12 +63,12 @@ bool DBusManager::isAuditAdmin()
     qCInfo(logApp) << "Current user name:" << currentUserName;
 
     // 根据用户名判断用户身份，查看是否为审计管理员
-    QDBusInterface interfaceSE("com.deepin.daemon.SecurityEnhance", "/com/deepin/daemon/SecurityEnhance", "com.deepin.daemon.SecurityEnhance", QDBusConnection::systemBus());
+    QDBusInterface interfaceSE("com.lingmo.daemon.SecurityEnhance", "/com/lingmo/daemon/SecurityEnhance", "com.lingmo.daemon.SecurityEnhance", QDBusConnection::systemBus());
     if (interfaceSE.isValid()) {
         qCInfo(logApp) << "SecurityEnhance interface is valid, calling GetSEUserByName method";
         QDBusReply<QString> reply = interfaceSE.call(QStringLiteral("GetSEUserByName"), currentUserName);
         if (!reply.error().message().isEmpty()) {
-            qCWarning(logApp) << qPrintable(QString("com.deepin.daemon.SecurityEnhance.GetSEUserByName DBus error: %1").arg(reply.error().message()));
+            qCWarning(logApp) << qPrintable(QString("com.lingmo.daemon.SecurityEnhance.GetSEUserByName DBus error: %1").arg(reply.error().message()));
         }
 
         if (reply.value() == "audadm_u" || reply.value() == "auditadm_u") {

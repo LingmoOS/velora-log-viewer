@@ -20,7 +20,7 @@ class LogViewerService : public QObject
     , protected QDBusContext
 {
     Q_OBJECT
-    Q_CLASSINFO("D-Bus Interface", "com.deepin.logviewer")
+    Q_CLASSINFO("D-Bus Interface", "com.lingmo.logviewer")
 public:
     explicit LogViewerService(QObject *parent = nullptr);
     ~LogViewerService();

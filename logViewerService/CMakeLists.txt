@@ -22,7 +22,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -fstack-protector-all")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}  -fstack-protector-all")
 
 set(APP_RES_DIR "assets")
-set(APP_SERVICE "${APP_RES_DIR}/data/com.deepin.logviewer.service")
+set(APP_SERVICE "${APP_RES_DIR}/data/com.lingmo.logviewer.service")
 set(APP_SYSTEMD_SERVICE "${APP_RES_DIR}/data/deepin-log-viewer-daemon.service")
 set(APP_CONFIG "${APP_RES_DIR}/data/com.deepin.logviewer.conf")
 
