@@ -123,10 +123,10 @@ QString LogSegementExportThread::getDocTemplatePath()
     qCDebug(logApp) << "Getting DOC template path for flag:" << m_flag;
     QString tempdir("");
     if (m_flag == KERN) {
-        tempdir = "/usr/share/deepin-log-viewer/DocxTemplate/4column.dfw";
+        tempdir = "/usr/share/lingmo-log-viewer/DocxTemplate/4column.dfw";
         qCDebug(logApp) << "Using KERN template path";
     } else if (m_flag == Kwin) {
-        tempdir = "/usr/share/deepin-log-viewer/DocxTemplate/1column.dfw";
+        tempdir = "/usr/share/lingmo-log-viewer/DocxTemplate/1column.dfw";
         qCDebug(logApp) << "Using Kwin template path";
     } else {
         qCWarning(logApp) << "exportToDoc type is Wrong!";

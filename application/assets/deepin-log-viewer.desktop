@@ -1,11 +1,11 @@
 [Desktop Entry]
 Categories=Utility
-Exec=deepin-log-viewer %f
+Exec=lingmo-log-viewer %f
 GenericName=Log Viewer
 Icon=deepin-log-viewer
 Name=Deepin Log Viewer
 StartupNotify=false
-TryExec=deepin-log-viewer
+TryExec=lingmo-log-viewer
 Type=Application
 X-Deepin-Vendor=deepin
 

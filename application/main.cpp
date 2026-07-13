@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
         // qCDebug(logApp) << "Command line arguments:";
         QCoreApplication a(argc, argv);
         a.setOrganizationName("deepin");
-        a.setApplicationName("deepin-log-viewer");
+        a.setApplicationName("lingmo-log-viewer");
         a.setApplicationVersion(VERSION);
 
         DLogManager::registerConsoleAppender();
@@ -77,7 +77,7 @@ int main(int argc, char *argv[])
         QCommandLineOption reportCoredumpOption(QStringList() << "reportcoredump", DApplication::translate("main", "Report coredump informations."));
 
         QCommandLineParser cmdParser;
-        cmdParser.setApplicationDescription("deepin-log-viewer");
+        cmdParser.setApplicationDescription("lingmo-log-viewer");
         cmdParser.addHelpOption();
         cmdParser.addVersionOption();
         cmdParser.addOption(exportOption);
@@ -336,7 +336,7 @@ int main(int argc, char *argv[])
         a.setAutoActivateWindows(true);
         a.loadTranslator();
         a.setOrganizationName("deepin");
-        a.setApplicationName("deepin-log-viewer");
+        a.setApplicationName("lingmo-log-viewer");
         a.setApplicationVersion(VERSION);
         a.setProductIcon(QIcon::fromTheme("deepin-log-viewer"));
         a.setWindowIcon(QIcon::fromTheme("deepin-log-viewer"));

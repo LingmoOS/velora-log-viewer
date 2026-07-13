@@ -1590,11 +1590,11 @@ bool LogExportThread::exportToDoc(const QString &fileName, const QList<QString> 
     try {
         QString tempdir ;
         if (iFlag == JOURNAL) {
-            tempdir = "/usr/share/deepin-log-viewer/DocxTemplate/6column.dfw";
+            tempdir = "/usr/share/lingmo-log-viewer/DocxTemplate/6column.dfw";
         } else if (iFlag == KERN) {
-            tempdir = "/usr/share/deepin-log-viewer/DocxTemplate/4column.dfw";
+            tempdir = "/usr/share/lingmo-log-viewer/DocxTemplate/4column.dfw";
         } else if (iFlag == Kwin) {
-            tempdir = "/usr/share/deepin-log-viewer/DocxTemplate/1column.dfw";
+            tempdir = "/usr/share/lingmo-log-viewer/DocxTemplate/1column.dfw";
         } else {
             qCWarning(logApp) << "exportToDoc type is Wrong!";
             return false;
@@ -1692,9 +1692,9 @@ bool LogExportThread::exportToDoc(const QString &fileName, const QList<LOG_MSG_J
     try {
         QString tempdir ;
         if (iFlag == JOURNAL) {
-            tempdir = "/usr/share/deepin-log-viewer/DocxTemplate/6column.dfw";
+            tempdir = "/usr/share/lingmo-log-viewer/DocxTemplate/6column.dfw";
         } else if (iFlag == KERN) {
-            tempdir = "/usr/share/deepin-log-viewer/DocxTemplate/4column.dfw";
+            tempdir = "/usr/share/lingmo-log-viewer/DocxTemplate/4column.dfw";
         } else {
             qCWarning(logApp) << "exportToDoc type is Wrong!";
             return false;
@@ -1789,7 +1789,7 @@ bool LogExportThread::exportToDoc(const QString &fileName, const QList<LOG_MSG_J
 bool LogExportThread::exportToDoc(const QString &fileName, const QList<LOG_MSG_APPLICATOIN> &jList, const QStringList &labels, QString &iAppName)
 {
     try {
-        QString tempdir = "/usr/share/deepin-log-viewer/DocxTemplate/4column.dfw";
+        QString tempdir = "/usr/share/lingmo-log-viewer/DocxTemplate/4column.dfw";
         if (!QFile(tempdir).exists()) {
             qCWarning(logApp) << "export docx template is not exisits";
             return  false;
@@ -1867,7 +1867,7 @@ bool LogExportThread::exportToDoc(const QString &fileName, const QList<LOG_MSG_A
 bool LogExportThread::exportToDoc(const QString &fileName, const QList<LOG_MSG_DPKG> &jList, const QStringList &labels)
 {
     try {
-        QString tempdir = "/usr/share/deepin-log-viewer/DocxTemplate/3column.dfw";
+        QString tempdir = "/usr/share/lingmo-log-viewer/DocxTemplate/3column.dfw";
         if (!QFile(tempdir).exists()) {
             qCWarning(logApp) << "export docx template is not exisits";
             return  false;
@@ -1944,7 +1944,7 @@ bool LogExportThread::exportToDoc(const QString &fileName, const QList<LOG_MSG_D
 bool LogExportThread::exportToDoc(const QString &fileName, const QList<LOG_MSG_BOOT> &jList, const QStringList &labels)
 {
     try {
-        QString tempdir = "/usr/share/deepin-log-viewer/DocxTemplate/2column.dfw";
+        QString tempdir = "/usr/share/lingmo-log-viewer/DocxTemplate/2column.dfw";
         if (!QFile(tempdir).exists()) {
             qCWarning(logApp) << "export docx template is not exisits";
             return  false;
@@ -2017,7 +2017,7 @@ bool LogExportThread::exportToDoc(const QString &fileName, const QList<LOG_MSG_B
 bool LogExportThread::exportToDoc(const QString &fileName, const QList<LOG_MSG_XORG> &jList, const QStringList &labels)
 {
     try {
-        QString tempdir = "/usr/share/deepin-log-viewer/DocxTemplate/2column.dfw";
+        QString tempdir = "/usr/share/lingmo-log-viewer/DocxTemplate/2column.dfw";
         if (!QFile(tempdir).exists()) {
             qCWarning(logApp) << "export docx template is not exisits";
             return  false;
@@ -2093,7 +2093,7 @@ bool LogExportThread::exportToDoc(const QString &fileName, const QList<LOG_MSG_N
 {
 
     try {
-        QString tempdir = "/usr/share/deepin-log-viewer/DocxTemplate/4column.dfw";
+        QString tempdir = "/usr/share/lingmo-log-viewer/DocxTemplate/4column.dfw";
         if (!QFile(tempdir).exists()) {
             qCWarning(logApp) << "export docx template is not exisits";
             return  false;
@@ -2171,7 +2171,7 @@ bool LogExportThread::exportToDoc(const QString &fileName, const QList<LOG_MSG_K
 {
 
     try {
-        QString tempdir = "/usr/share/deepin-log-viewer/DocxTemplate/1column.dfw";
+        QString tempdir = "/usr/share/lingmo-log-viewer/DocxTemplate/1column.dfw";
         if (!QFile(tempdir).exists()) {
             qCWarning(logApp) << "export docx template is not exisits";
             return  false;
@@ -2238,7 +2238,7 @@ bool LogExportThread::exportToDoc(const QString &fileName, const QList<LOG_MSG_K
 bool LogExportThread::exportToDoc(const QString &fileName, const QList<LOG_MSG_DNF> &jList, const QStringList &labels)
 {
     try {
-        QString tempdir = "/usr/share/deepin-log-viewer/DocxTemplate/1column.dfw";
+        QString tempdir = "/usr/share/lingmo-log-viewer/DocxTemplate/1column.dfw";
         if (!QFile(tempdir).exists()) {
             qCWarning(logApp) << "export docx template is not exisits";
             return false;
@@ -2304,7 +2304,7 @@ bool LogExportThread::exportToDoc(const QString &fileName, const QList<LOG_MSG_D
 bool LogExportThread::exportToDoc(const QString &fileName, const QList<LOG_MSG_DMESG> &jList, const QStringList &labels)
 {
     try {
-        QString tempdir = "/usr/share/deepin-log-viewer/DocxTemplate/1column.dfw";
+        QString tempdir = "/usr/share/lingmo-log-viewer/DocxTemplate/1column.dfw";
         if (!QFile(tempdir).exists()) {
             qCWarning(logApp) << "export docx template is not exisits";
             return false;
@@ -2370,7 +2370,7 @@ bool LogExportThread::exportToDoc(const QString &fileName, const QList<LOG_MSG_D
 bool LogExportThread::exportToDoc(const QString &fileName, const QList<LOG_MSG_AUDIT> &jList, const QStringList &labels)
 {
     try {
-        QString tempdir = "/usr/share/deepin-log-viewer/DocxTemplate/5column.dfw";
+        QString tempdir = "/usr/share/lingmo-log-viewer/DocxTemplate/5column.dfw";
         if (!QFile(tempdir).exists()) {
             qCWarning(logApp) << "export docx template is not exisits";
             return  false;

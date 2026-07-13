@@ -22,7 +22,7 @@ std::atomic<LogSettings *> LogSettings::m_instance;
 std::mutex LogSettings::m_mutex;
 
 // 审计类型归类规则配置文件
-const QString AUDIT_CONFIG_PATH = "/usr/share/deepin-log-viewer/auditRule.conf";
+const QString AUDIT_CONFIG_PATH = "/usr/share/lingmo-log-viewer/auditRule.conf";
 
 /**
  * @brief LogSettings::LogSettings 构造函数从配置文件初始化配置

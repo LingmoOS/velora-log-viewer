@@ -8,7 +8,7 @@ endif ()
 #add_subdirectory(../3rdparty/docx docx_binary_dir)
 #add_subdirectory(../3rdparty/QtXlsxWriter)
 configure_file(environments.h.in environments.h @ONLY)
-set (EXE_NAME deepin-log-viewer)
+set (EXE_NAME lingmo-log-viewer)
 
 configure_file(config.h.in config.h @ONLY)
 
@@ -323,7 +323,7 @@ install(FILES ${QM_FILES} DESTINATION share/${EXE_NAME}/translations)
 
 file(GLOB DOCXFAC_TEMPLATE "assets/doc_template/*.dfw")
 install(FILES assets/deepin-log-viewer.desktop DESTINATION ${CMAKE_INSTALL_PREFIX}/share/applications)
-install(FILES ${DOCXFAC_TEMPLATE} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/deepin-log-viewer/DocxTemplate)
+install(FILES ${DOCXFAC_TEMPLATE} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/lingmo-log-viewer/DocxTemplate)
 install(FILES assets/com.deepin.pkexec.logViewerAuth.policy DESTINATION ${CMAKE_INSTALL_PREFIX}/share/polkit-1/actions)
 install(FILES assets/images/deepin-log-viewer.svg
             DESTINATION ${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/scalable/apps/)
@@ -339,13 +339,13 @@ install(DIRECTORY assets/deepin-log-viewer
                 DESTINATION ${CMAKE_INSTALL_PREFIX}/share/deepin-manual/manual-assets/application/)
 
 # Install aduit rule config file.
-install(FILES assets/auditRule.conf DESTINATION ${CMAKE_INSTALL_PREFIX}/share/deepin-log-viewer)
+install(FILES assets/auditRule.conf DESTINATION ${CMAKE_INSTALL_PREFIX}/share/lingmo-log-viewer)
 
 # Install cli script deepin-logger
 install(FILES assets/deepin-logger DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
 
 # Install log json config file.
-install(FILES configs/logconfig/deepin-log-viewer.json DESTINATION ${CMAKE_INSTALL_PREFIX}/share/deepin-log-viewer/deepin-log.conf.d/)
+install(FILES configs/logconfig/deepin-log-viewer.json DESTINATION ${CMAKE_INSTALL_PREFIX}/share/lingmo-log-viewer/deepin-log.conf.d/)
 
 # Install debugmode json config file.
 install(FILES configs/debugconfig/org.deepin.log.viewer.json DESTINATION ${CMAKE_INSTALL_PREFIX}/share/deepin-debug-config/deepin-debug-config.d/)

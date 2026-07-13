@@ -25,7 +25,7 @@ std::atomic<LogApplicationHelper *> LogApplicationHelper::m_instance;
 std::mutex LogApplicationHelper::m_mutex;
 
 // 自研应用日志json配置文件目录
-const QString APP_LOG_CONFIG_PATH = "/usr/share/deepin-log-viewer/deepin-log.conf.d";
+const QString APP_LOG_CONFIG_PATH = "/usr/share/lingmo-log-viewer/deepin-log.conf.d";
 
 const QString COREDUMP_REPORT_TIME = "coredumpReportTime";
 const QString COREDUMP_REPORT_TIME_GSETTING = "coredumpreporttime";
